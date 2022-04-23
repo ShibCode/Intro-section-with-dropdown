@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  font-family: Epilogue;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.dropdown1 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.dropdown2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.arrow-up {
+  display: none;
+}
+.nav-item {
+  list-style: none;
+  color: hsl(0, 0%, 41%);
+}
+.nav-item:hover,
+.register:hover {
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+.dropdown:hover .arrow-up {
+  display: inline-block;
+}
+.dropdown:hover .arrow-up path {
+  stroke: hsl(0, 0%, 8%);
+}
+.dropdown:hover .arrow-down {
+  display: none;
+}
+.register:hover {
+  border-color: hsl(0, 0%, 8%);
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+.hammenu-open {
+  display: none;
+}
+.register {
+  background-color: transparent;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  border-radius: 14px;
+  padding: 10px 22px;
+  width: 8rem;
+  height: 2.5rem;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  color: hsl(0, 0%, 41%);
+}
+.dropdown-menu:hover,
+.hover-area:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown:hover .hover-area {
+  display: inline-block;
+}
+.dropdown-menu {
+  background-color: white;
+  box-shadow: 5px 10px 40px -12px gray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 70px;
+  display: none;
+}
+.dropdown-menu1 {
+  width: 10rem;
+  padding: 1.5rem 1rem;
+}
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dropdown-menu2 {
+  width: 7.5rem;
+  padding: 1.5rem 1rem;
+}
+.dropdown-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  line-height: 2rem;
+  font-size: 15px;
+}
+.dropdown-img {
+  width: 14px;
+}
+.dropdown-item-para {
+  display: flex;
+  align-items: center;
+}
+.dropdown-item-para:hover {
+  color: hsl(0, 0%, 8%);
+}
+.hover-area {
+  background-color: transparent;
+  width: 8rem;
+  height: 2rem;
+  position: absolute;
+  top: 43px;
+  display: none;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+main {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8vw;
+}
+.desktop-img-div {
+  height: 600px;
+  width: 450px;
+  background-image: url("./intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.nav-hammenu {
+  list-style: none;
+}
+.main-left {
+  width: 578px;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heading {
+  font-size: 80px;
+  width: 91%;
+}
+.para {
+  font-size: 18px;
+  width: 83%;
+  line-height: 26px;
+  color: hsl(0, 0%, 41%);
+}
+.learn-more {
+  border: 2px solid black;
+  background: black;
+  color: white;
+  font-size: 18px;
+  width: 175px;
+  height: 55px;
+  border-radius: 15px;
+  font-weight: 700;
+  transition: all 0.25s ease-in-out;
+}
+.learn-more:hover {
+  background-color: white;
+  color: black;
+}
+.companies {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.databiz {
+  width: 100px;
+}
+.audiophile {
+  width: 75px;
+}
+.meet {
+  width: 100px;
+}
+.maker {
+  width: 100px;
+}
+.hammenu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 5rem 1.5rem;
+}
+.hammenu-list-item {
+  color: hsl(0, 0%, 41%);
+  list-style: none;
+}
+.hammenu-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 31px;
+  top: 22px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden {
+  background-color: transparent;
+  border: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 16px;
+}
+.ham-menu {
+  display: none;
+}
+.features-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.features-list-item:hover,
+.expanded-list-item:hover,
+.hammenu-list-item:hover {
+  cursor: pointer;
+}
+.expanded-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0.25rem 1.25rem;
+  list-style: none;
+}
+.features-img {
+  width: 16px;
+}
+.features-expanded,
+.company-expanded {
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.expand-button {
+  display: flex;
+  align-items: center;
+}
+.ham-arrow-down-2,
+.ham-arrow-down-1 {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.menu {
+  width: 228px;
+}
+.hammenu-open-button {
+  width: 44px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hammenu-open-button:hover,
+.hammenu-close:hover {
+  background-color: hsla(0, 0%, 0%, 0.1);
+}

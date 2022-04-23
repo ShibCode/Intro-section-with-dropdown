@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Section</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="left-nav">
+          <ul class="nav-list">
+            <li class="nav-item logo">
+              <img
+                src="./intro-section-with-dropdown-navigation-main/images/logo.svg"
+                alt="logo"
+                class="logo-img"
+              />
+            </li>
+            <li class="nav-item dropdown dropdown1">
+              <div class="hover-item">
+                Features
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-down"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-up"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              </div>
+              <div class="hover-area"></div>
+              <div class="dropdown-menu dropdown-menu1">
+                <ul class="dropdown-content">
+                  <li class="dropdown-item">
+                    <img
+                      src="./intro-section-with-dropdown-navigation-main/images/icon-todo.svg"
+                      alt="todo"
+                      class="dropdown-img"
+                    />
+                    <p class="dropdown-item-para">Todo List</p>
+                  </li>
+                  <li class="dropdown-item">
+                    <img
+                      src="./intro-section-with-dropdown-navigation-main/images/icon-calendar.svg"
+                      alt="calendar"
+                      class="dropdown-img"
+                    />
+                    <p class="dropdown-item-para">Calendar</p>
+                  </li>
+                  <li class="dropdown-item">
+                    <img
+                      src="./intro-section-with-dropdown-navigation-main/images/icon-reminders.svg"
+                      alt="reminders"
+                      class="dropdown-img"
+                    />
+                    <p class="dropdown-item-para">Reminders</p>
+                  </li>
+                  <li class="dropdown-item">
+                    <img
+                      src="./intro-section-with-dropdown-navigation-main/images/icon-planning.svg"
+                      alt="planning"
+                      class="dropdown-img"
+                    />
+                    <p class="dropdown-item-para">Planning</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown dropdown2">
+              <div class="hover-item">
+                Company
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-down"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+                <svg
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow-up"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              </div>
+              <div class="hover-area"></div>
+              <div class="dropdown-menu dropdown-menu2">
+                <ul class="dropdown-content">
+                  <li class="dropdown-item">
+                    <p class="dropdown-item-para">History</p>
+                  </li>
+                  <li class="dropdown-item">
+                    <p class="dropdown-item-para">Our Team</p>
+                  </li>
+                  <li class="dropdown-item">
+                    <p class="dropdown-item-para">Blog</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">Careers</li>
+            <li class="nav-item">About</li>
+            <li class="nav-hammenu">
+              <button
+                class="hammenu-open-button hidden"
+                onclick="hammenuOpen()"
+              >
+                <svg
+                  width="32"
+                  height="18"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="hammenu-open"
+                >
+                  <g fill="#151515" fill-rule="evenodd">
+                    <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+                  </g>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="right-nav">
+          <ul class="nav-list">
+            <li class="nav-item">Login</li>
+            <li class="nav-item"><button class="register">Register</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="main-left">
+        <div class="content">
+          <h1 class="heading">Make remote work</h1>
+          <p class="para">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learn-more">Learn more</button>
+        </div>
+        <div class="companies">
+          <img
+            src="./intro-section-with-dropdown-navigation-main/images/client-databiz.svg"
+            alt="databiz"
+            class="company-logo databiz"
+          />
+          <img
+            src="./intro-section-with-dropdown-navigation-main/images/client-audiophile.svg"
+            alt="audiophile"
+            class="company-logo audiophile"
+          />
+          <img
+            src="./intro-section-with-dropdown-navigation-main/images/client-meet.svg"
+            alt="meet"
+            class="company-logo meet"
+          />
+          <img
+            src="./intro-section-with-dropdown-navigation-main/images/client-maker.svg"
+            alt="maker"
+            class="company-logo maker"
+          />
+        </div>
+      </div>
+      <div class="desktop-img-div"></div>
+    </main>
+    <section class="ham-menu" id="hamMenu">
+      <div class="blacked-out" onclick="hammenuClose()"></div>
+      <div class="menu">
+        <button class="hammenu-close" onclick="hammenuClose()">
+          <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#151515" fill-rule="evenodd">
+              <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+              <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+            </g>
+          </svg>
+        </button>
+        <ul class="hammenu-content">
+          <li class="hammenu-list-item" id="features">
+            <button class="hidden expand-button" onclick="expandFeatures()">
+              Features &nbsp;
+              <svg
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ham-arrow-down-1 show"
+                id="arrowDown1"
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+              <svg
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ham-arrow-up-1 hide"
+                id="arrowUp1"
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 5 4-4 4 4"
+                />
+              </svg>
+            </button>
+            <div class="features-expanded" id="featuresExpanded">
+              <ul class="expanded-list">
+                <li class="features-list-item">
+                  <img
+                    src="./intro-section-with-dropdown-navigation-main/images/icon-todo.svg"
+                    alt="todo"
+                    class="features-img"
+                  />
+                  <p class="features-list-item-para">Todo List</p>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    src="./intro-section-with-dropdown-navigation-main/images/icon-calendar.svg"
+                    alt="calender"
+                    class="features-img"
+                  />
+                  <p class="features-list-item-para">Calendar</p>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    src="./intro-section-with-dropdown-navigation-main/images/icon-reminders.svg"
+                    alt="reminders"
+                    class="features-img"
+                  />
+                  <p class="features-list-item-para">Reminders</p>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    src="./intro-section-with-dropdown-navigation-main/images/icon-planning.svg"
+                    alt="planning"
+                    class="features-img"
+                  />
+                  <p class="features-list-item-para">Planning</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="hammenu-list-item" id="company">
+            <button class="hidden expand-button" onclick="expandCompany()">
+              Company &nbsp;
+              <svg
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ham-arrow-down-2 show"
+                id="arrowDown2"
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+              <svg
+                width="10"
+                height="6"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ham-arrow-up-2 hide"
+                id="arrowUp2"
+              >
+                <path
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 5 4-4 4 4"
+                />
+              </svg>
+            </button>
+            <div class="company-expanded" id="companyExpanded">
+              <ul class="expanded-list">
+                <li class="expanded-list-item">History</li>
+                <li class="expanded-list-item">Our Team</li>
+                <li class="expanded-list-item">Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li class="hammenu-list-item">Careers</li>
+          <li class="hammenu-list-item">About</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

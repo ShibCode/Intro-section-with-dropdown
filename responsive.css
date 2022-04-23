@@ -1,0 +1,187 @@
+@media screen and (max-width: 1280px) {
+  main {
+    gap: 0rem;
+  }
+  .heading {
+    font-size: 66px;
+    width: 77%;
+  }
+  .para {
+    font-size: 17px;
+    width: 76%;
+  }
+  .learn-more {
+    font-size: 17px;
+    width: 165px;
+    height: 50px;
+  }
+  .databiz {
+    width: 90px;
+  }
+  .audiophile {
+    width: 70px;
+  }
+  .meet {
+    width: 90px;
+  }
+  .maker {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  * {
+    overflow-x: hidden;
+  }
+  main {
+    flex-direction: column-reverse;
+    gap: 2.5rem;
+    align-items: center;
+    margin: 2rem 0 4rem;
+  }
+  .desktop-img-div {
+    background: url("./intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 338.4px;
+  }
+  .main-left {
+    width: 100%;
+    gap: 4rem;
+    align-items: center;
+  }
+  .content {
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: -10px;
+    font-size: 54px;
+    width: 100%;
+  }
+  .para {
+    text-align: center;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 20px 25px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .logo {
+    display: inline-block;
+    height: 38px;
+    overflow-y: hidden;
+  }
+  .logo-img {
+    height: 38px;
+  }
+  .left-nav {
+    width: 100%;
+  }
+  .nav-list {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hammenu-open {
+    display: inline-block;
+  }
+  .hammenu:hover {
+    cursor: pointer;
+  }
+  .ham-menu {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+  }
+  .blacked-out {
+    position: absolute;
+    top: 0;
+    width: calc(100vw - 228px);
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.2);
+  }
+  .para {
+    width: 570px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .heading {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .heading {
+    font-size: 40px;
+  }
+  .para {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .hammenu-close {
+    right: 21px;
+    top: 20px;
+  }
+  .nav {
+    padding: 20px 15px;
+  }
+  .logo {
+    height: 28px;
+    overflow-y: hidden;
+  }
+  .logo-img {
+    height: 28px;
+  }
+  .nav-hammenu {
+    height: auto;
+  }
+  .desktop-img-div {
+    height: 75vw;
+    width: 100vw;
+    background-repeat: no-repeat;
+  }
+  .companies {
+    gap: 1.5rem;
+  }
+  .databiz {
+    width: 72px;
+  }
+  .audiophile {
+    width: 55px;
+  }
+  .meet {
+    width: 72px;
+  }
+  .maker {
+    width: 72px;
+  }
+  .heading {
+    font-size: 34px;
+  }
+  .para {
+    font-size: 16px;
+    width: 91%;
+  }
+  .learn-more {
+    font-size: 16px;
+    width: 160px;
+    height: 45px;
+  }
+  .blacked-out {
+    background-color: hsla(0, 0%, 0%, 0.5);
+  }
+}
