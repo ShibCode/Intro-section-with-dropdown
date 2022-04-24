@@ -87,7 +87,8 @@
     width: 100%;
     justify-content: space-between;
   }
-  .hammenu-open {
+  .hammenu-open,
+  .hammenu-close {
     display: inline-block;
   }
   .hammenu:hover {
@@ -98,6 +99,9 @@
     top: 0;
     height: 100%;
     width: 100vw;
+  }
+  .hammenu-open-button {
+    display: inline-block;
   }
   .menu {
     position: absolute;
