@@ -34,6 +34,7 @@ body {
 .nav-item {
   list-style: none;
   color: hsl(0, 0%, 41%);
+  transition: all 0.15s ease-in-out;
 }
 .nav-item:hover,
 .register:hover {
@@ -68,14 +69,25 @@ body {
   padding: 10px 22px;
   width: 8rem;
   height: 2.5rem;
+  transition: all 0.15s ease-in-out;
 }
 .dropdown:hover .dropdown-menu {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
   color: hsl(0, 0%, 41%);
+}
+.dropdown:hover .dropdown-menu1 {
+  height: 221px;
+}
+.dropdown:hover .dropdown-menu2 {
+  height: 174px;
+}
+.dropdown-menu2 {
+  height: 0px;
 }
 .dropdown-menu:hover,
 .hover-area:hover .dropdown-menu {
-  display: flex;
+  visibility: visible;
 }
 .dropdown:hover .hover-area {
   display: inline-block;
@@ -88,9 +100,12 @@ body {
   justify-content: center;
   position: absolute;
   top: 70px;
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 .dropdown-menu1 {
+  height: 0px;
   width: 10rem;
   padding: 1.5rem 1rem;
 }
@@ -117,6 +132,7 @@ body {
 .dropdown-item-para {
   display: flex;
   align-items: center;
+  transition: all 0.15s ease-in-out;
 }
 .dropdown-item-para:hover {
   color: hsl(0, 0%, 8%);
@@ -135,10 +151,12 @@ body {
 }
 main {
   display: flex;
-  margin-top: 10px;
+  margin: 10px 0 50px 0;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 8vw;
+  height: calc(100vh - 150px);
+  min-height: 625px;
 }
 .desktop-img-div {
   height: 600px;
@@ -191,20 +209,16 @@ main {
   align-items: center;
   gap: 2rem;
 }
-.databiz {
+.databiz,
+.meet,
+.maker {
   width: 100px;
 }
 .audiophile {
   width: 75px;
 }
-.meet {
-  width: 100px;
-}
-.maker {
-  width: 100px;
-}
 .hammenu-content {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1.25rem;
   padding: 5rem 1.5rem;
@@ -221,7 +235,6 @@ main {
   top: 22px;
   width: 32px;
   height: 32px;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: none;
@@ -233,17 +246,43 @@ main {
   font-size: 16px;
 }
 .ham-menu {
-  display: none;
+  visibility: hidden;
 }
 .features-list-item {
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: all 0.15s ease-in-out;
 }
-.features-list-item:hover,
-.expanded-list-item:hover,
+.ham-arrow-up-1 path,
+.ham-arrow-up-2 path,
+.ham-arrow-down-1 path,
+.ham-arrow-down-2 path,
+.hammenu-close,
+.hammenu-open-button,
+.hammenu-hover,
+.expanded-list-item {
+  transition: all 0.15s ease-in-out;
+}
+.hammenu-hover:hover {
+  color: hsl(0, 0%, 8%);
+}
 .hammenu-list-item:hover {
   cursor: pointer;
+}
+.features-list-item:hover,
+.expanded-list-item:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+}
+.expand-button:hover {
+  color: hsl(0, 0%, 8%);
+}
+.expand-button:hover .ham-arrow-down-2 path,
+.expand-button:hover .ham-arrow-down-1 path,
+.expand-button:hover .ham-arrow-up-2 path,
+.expand-button:hover .ham-arrow-up-1 path {
+  stroke: hsl(0, 0%, 8%);
 }
 .expanded-list {
   display: flex;
@@ -257,32 +296,51 @@ main {
 }
 .features-expanded,
 .company-expanded {
-  display: none;
-}
-button:hover {
-  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+  transition: all 0.1s ease-in-out;
+  overflow-y: hidden;
 }
 .expand-button {
   display: flex;
   align-items: center;
+  transition: all 0.15s ease-in-out;
+}
+.features-expanded {
+  height: 0px;
+}
+button:hover {
+  cursor: pointer;
 }
 .ham-arrow-down-2,
 .ham-arrow-down-1 {
   display: none;
 }
 .show {
-  display: block;
+  visibility: visible;
 }
 .hide {
+  visibility: hidden;
+}
+.show-arrow {
+  display: inline-block;
+}
+.hide-arrow {
   display: none;
 }
 .menu {
+  visibility: visible;
   width: 228px;
+  right: -100%;
+  transition: all 0.1s ease-in-out;
+}
+#features,
+#company {
+  transition: all 0.1s ease-in-out;
 }
 .hammenu-open-button {
   width: 44px;
   height: 32px;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: none;
@@ -290,4 +348,16 @@ button:hover {
 .hammenu-open-button:hover,
 .hammenu-close:hover {
   background-color: hsla(0, 0%, 0%, 0.1);
+}
+.features-expanded-height {
+  height: 161.2px;
+}
+.features-expanded-padding {
+  padding-bottom: 161.2px;
+}
+.company-expanded-height {
+  height: 119px;
+}
+.company-expanded-padding {
+  padding-bottom: 119px;
 }
