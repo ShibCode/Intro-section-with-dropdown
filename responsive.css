@@ -15,17 +15,13 @@
     width: 165px;
     height: 50px;
   }
-  .databiz {
+  .databiz,
+  .meet,
+  .maker {
     width: 90px;
   }
   .audiophile {
     width: 70px;
-  }
-  .meet {
-    width: 90px;
-  }
-  .maker {
-    width: 90px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -37,6 +33,8 @@
     gap: 2.5rem;
     align-items: center;
     margin: 2rem 0 4rem;
+    height: auto;
+    min-height: 0px;
   }
   .desktop-img-div {
     background: url("./intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png");
@@ -88,8 +86,10 @@
     justify-content: space-between;
   }
   .hammenu-open,
-  .hammenu-close {
-    display: inline-block;
+  .hammenu-close,
+  .hammenu-open-button,
+  .hammenu-content {
+    display: flex;
   }
   .hammenu:hover {
     cursor: pointer;
@@ -100,13 +100,9 @@
     height: 100%;
     width: 100vw;
   }
-  .hammenu-open-button {
-    display: inline-block;
-  }
   .menu {
     position: absolute;
     top: 0;
-    right: 0;
     background-color: white;
     height: 100vh;
   }
@@ -115,7 +111,9 @@
     top: 0;
     width: calc(100vw - 228px);
     height: 100vh;
-    background-color: hsla(0, 0%, 0%, 0.2);
+    background-color: hsla(0, 0%, 0%, 0);
+    visibility: visible;
+    transition: all 0.1s ease-in-out;
   }
   .para {
     width: 570px;
@@ -161,17 +159,13 @@
   .companies {
     gap: 1.5rem;
   }
-  .databiz {
+  .databiz,
+  .meet,
+  .maker {
     width: 72px;
   }
   .audiophile {
     width: 55px;
-  }
-  .meet {
-    width: 72px;
-  }
-  .maker {
-    width: 72px;
   }
   .heading {
     font-size: 34px;
@@ -184,8 +178,5 @@
     font-size: 16px;
     width: 160px;
     height: 45px;
-  }
-  .blacked-out {
-    background-color: hsla(0, 0%, 0%, 0.5);
   }
 }
