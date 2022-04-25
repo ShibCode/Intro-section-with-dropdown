@@ -198,7 +198,8 @@ main {
   height: 55px;
   border-radius: 15px;
   font-weight: 700;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  z-index: 10;
 }
 .learn-more:hover {
   background-color: white;
@@ -298,16 +299,14 @@ main {
 .company-expanded {
   position: absolute;
   visibility: hidden;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   overflow-y: hidden;
+  height: 0px;
 }
 .expand-button {
   display: flex;
   align-items: center;
   transition: all 0.15s ease-in-out;
-}
-.features-expanded {
-  height: 0px;
 }
 button:hover {
   cursor: pointer;
@@ -332,11 +331,11 @@ button:hover {
   visibility: visible;
   width: 228px;
   right: -100%;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #features,
 #company {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .hammenu-open-button {
   width: 44px;
