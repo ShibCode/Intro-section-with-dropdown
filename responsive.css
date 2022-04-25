@@ -113,7 +113,7 @@
     height: 100vh;
     background-color: hsla(0, 0%, 0%, 0);
     visibility: visible;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .para {
     width: 570px;
